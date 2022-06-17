@@ -1,0 +1,60 @@
+.dataContainer {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.infoContainer {
+  width: 80%;
+}
+
+.title {
+  font-size: 3rem;
+  margin: 0 0 30px;
+}
+
+.subtitle {
+  color: #525252;
+  margin: 0 80px 0 0;
+  font-size: 1.1rem;
+  line-height: 1.75rem;
+}
+
+.imgContainer {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.logo {
+  max-width: 50px;
+  align-self: center;
+  margin-right: 20px;
+}
+
+.socialMedia {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.socialMediaItem {
+  display: flex;
+}
+
+.socialMediaTitle {
+  font-size: 1.2rem;
+  text-align: left;
+  letter-spacing: 0.1rem;
+  font-weight: 200;
+  margin: 0 0 5px;
+}
+
+.socialMediaSubtitle {
+  font-weight: 500;
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.socialMediaInfo {
+  align-self: center;
+}
