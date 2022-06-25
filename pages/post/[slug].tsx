@@ -1,26 +1,22 @@
 import React, { useState } from "react";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "../../styles/Home.module.scss";
 import Loader from "../../components/Loader";
-
-const { BLOG_URL, CONTENT_API_KEY } = process.env;
+import Button from "../../components/Button";
+import LeftContent from "../../components/LeftContent";
+import { getPost } from "../../hooks/useGetPosts";
 
 type Post = {
   title: string;
   html: string;
   slug: string;
+  tags: Tags[];
 };
 
-async function getPost(slug: string) {
-  const res = await fetch(
-    `${BLOG_URL}/ghost/api/v3/content/posts/slug/${slug}?key=${CONTENT_API_KEY}&fields=title,slug,html`
-  ).then((response) => response.json());
-
-  const posts = res.posts;
-
-  return posts[0];
-}
+type Tags = {
+  tags: string;
+  name: string;
+};
 
 export const getStaticProps = async ({ params }) => {
   const post = await getPost(params.slug);
@@ -66,22 +62,29 @@ const Post: React.FC<{ post: Post }> = (props) => {
     document.body.appendChild(script);
   }
 
+  console.log(post);
+
   return (
     <div className={styles.container}>
-      <p className={styles.goback}>
-        <Link href="/">
-          <a>Go back</a>
-        </Link>
-      </p>
-      <h1>{post.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
-
-      {enableLoadComments && (
-        <p className={styles.goback} onClick={loadComments}>
-          Load Comments
-        </p>
-      )}
-
+      <h1 className={styles.titlePost}>{post.title}</h1>
+      <div className={styles.contentContainer}>
+        <LeftContent tags={post.tags} />
+        <div>
+          <div
+            className={styles.html}
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          ></div>
+        </div>
+      </div>
+      <div className={styles.comments}>
+        {enableLoadComments && (
+          <Button
+            textRender="Load Comments"
+            handleClick={loadComments}
+            size="md"
+          />
+        )}
+      </div>
       <div id="disqus_thread"></div>
     </div>
   );

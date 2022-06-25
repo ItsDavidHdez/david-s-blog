@@ -1,23 +1,21 @@
-import Link from "next/link";
 import MyPersonalData from "../components/MyPersonalData";
+import PostItem from "../components/PostItem";
 import styles from "../styles/Home.module.scss";
-
-const { BLOG_URL, CONTENT_API_KEY } = process.env;
+import { getPosts } from "../hooks/useGetPosts";
 
 type Post = {
   title: string;
   slug: string;
+  created_at: string;
+  custom_excerpt: string;
+  tags: Tags[];
+  reading_time: number;
 };
 
-async function getPosts() {
-  const res = await fetch(
-    `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&fields=title,slug,custom_excerpt`
-  ).then((response) => response.json());
-
-  const posts = res.posts;
-
-  return posts;
-}
+type Tags = {
+  tags: string;
+  name: string;
+};
 
 export const getStaticProps = async ({ params }) => {
   const posts = await getPosts();
@@ -33,17 +31,19 @@ const Home: React.FC<{ posts: Post[] }> = (props) => {
   return (
     <div className={styles.container}>
       <MyPersonalData />
-      <h1>¿Hoy que aprenderás?</h1>
+      <h2 className={styles.container__titleHome}>¿Hoy que aprenderás?</h2>
       <p>📰 Artículos más recientes</p>
-      <ul>
-        {posts.map((post) => (
-          <li key={post.slug}>
-            <Link href="/post/[slug]" as={`/post/${post.slug}`}>
-              <a>{post.title}</a>
-            </Link>
-          </li>
-        ))}
-      </ul>
+      {posts.map((post, key) => (
+        <PostItem
+          key={key}
+          title={post.title}
+          slug={post.slug}
+          date={post.created_at}
+          excerpt={post.custom_excerpt}
+          tags={post.tags}
+          readingTime={post.reading_time}
+        />
+      ))}
     </div>
   );
 };
