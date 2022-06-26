@@ -51,7 +51,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href="/aboutme">
+              <Link href="/post/quien-es-david-vargas-hernandez">
                 <a onClick={menuToggleHandler}>Acerca</a>
               </Link>
             </li>

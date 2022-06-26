@@ -3,6 +3,7 @@ import Image from "next/image";
 import Newsletter from "./Newsletter";
 import meImg from "../public/me.jpeg";
 import styles from "../styles/LeftContent.module.scss";
+import BuyMeACoffeeButton from "../components/BuyMeACoffeeButton";
 
 interface Props {
   tags: Tags;
@@ -30,7 +31,10 @@ const LeftContent: React.FC<Props> = ({ tags }) => {
         </div>
       </div>
       <Newsletter />
-      <div>buyme a coffe</div>
+      <div>
+        <p></p>
+        <BuyMeACoffeeButton />
+      </div>
     </div>
   );
 };
