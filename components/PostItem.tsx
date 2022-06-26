@@ -47,7 +47,13 @@ const Footer: React.FC<Props> = ({
       <Link href="/post/[slug]" as={`/post/${slug}`}>
         <a className={styles.postContainer__title}>{title}</a>
       </Link>
-      <p className={styles.postContainer__tags}>{tagRender}</p>
+      <div>
+        {tagRender.map((tag, key) => (
+          <p key={key} className={styles.postContainer__tags}>
+            {tag}&nbsp; &nbsp;
+          </p>
+        ))}
+      </div>
 
       <p className={styles.postContainer__info}>
         {excerpt
