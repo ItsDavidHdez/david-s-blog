@@ -5,6 +5,7 @@ import linkedingImg from "../public/linkedin.png";
 import myImg from "../public/me.jpeg";
 import Image from "next/image";
 import styles from "../styles/MyPersonalData.module.scss";
+import Link from "next/link";
 
 const MyPersonalData: React.FC = () => {
   return (
@@ -24,50 +25,58 @@ const MyPersonalData: React.FC = () => {
         </div>
       </div>
       <div className={styles.socialMedia}>
-        <div className={styles.socialMediaItem}>
-          <div className={styles.socialMediaItem__logo}>
-            <Image src={twitterImg} alt="Twitter" />
-          </div>
-          <div className={styles.socialMediaInfo}>
-            <p className={styles.socialMediaItem__info__title}>Twitter</p>
-            <p className={styles.socialMediaItem__info__subtitle}>
-              @ItsDavidHdez
-            </p>
-          </div>
-        </div>
-        <div className={styles.socialMediaItem}>
-          <div className={styles.socialMediaItem__logo}>
-            <Image src={linkedingImg} alt="Linkedin" />
-          </div>
-          <div className={styles.socialMediaInfo}>
-            <p className={styles.socialMediaItem__info__title}>Linkedin</p>
-            <p className={styles.socialMediaItem__info__subtitle}>
-              David Vargas
-            </p>
-          </div>
-        </div>
-        <div className={styles.socialMediaItem}>
-          <div className={styles.socialMediaItem__logo}>
-            <Image src={instagramImg} alt="Instagram" />
-          </div>
-          <div className={styles.socialMediaItem__info}>
-            <p className={styles.socialMediaItem__info__title}>Instagram</p>
-            <p className={styles.socialMediaItem__info__subtitle}>
-              @itsdavidhdez
-            </p>
-          </div>
-        </div>
-        <div className={styles.socialMediaItem}>
-          <div className={styles.socialMediaItem__logo}>
-            <Image src={facebookImg} alt="Facebook" />
-          </div>
-          <div className={styles.socialMediaItem__info}>
-            <p className={styles.socialMediaItem__info__title}>Facebook</p>
-            <p className={styles.socialMediaItem__info__subtitle}>
-              David Vargas
-            </p>
-          </div>
-        </div>
+        <Link href="https://twitter.com/ItsDavidHdez">
+          <a className={styles.socialMediaItem}>
+            <div className={styles.socialMediaItem__logo}>
+              <Image src={twitterImg} alt="Twitter" />
+            </div>
+            <div className={styles.socialMediaInfo}>
+              <p className={styles.socialMediaItem__info__title}>Twitter</p>
+              <p className={styles.socialMediaItem__info__subtitle}>
+                @ItsDavidHdez
+              </p>
+            </div>
+          </a>
+        </Link>
+        <Link href="https://www.linkedin.com/in/david-vargas-hern%C3%A1ndez-677183189/">
+          <a className={styles.socialMediaItem}>
+            <div className={styles.socialMediaItem__logo}>
+              <Image src={linkedingImg} alt="Linkedin" />
+            </div>
+            <div className={styles.socialMediaInfo}>
+              <p className={styles.socialMediaItem__info__title}>Linkedin</p>
+              <p className={styles.socialMediaItem__info__subtitle}>
+                David Vargas
+              </p>
+            </div>
+          </a>
+        </Link>
+        <Link href="https://www.instagram.com/itsdavidhdez/">
+          <a className={styles.socialMediaItem}>
+            <div className={styles.socialMediaItem__logo}>
+              <Image src={instagramImg} alt="Instagram" />
+            </div>
+            <div className={styles.socialMediaItem__info}>
+              <p className={styles.socialMediaItem__info__title}>Instagram</p>
+              <p className={styles.socialMediaItem__info__subtitle}>
+                @itsdavidhdez
+              </p>
+            </div>
+          </a>
+        </Link>
+        <Link href="https://www.facebook.com/angeldavid.vargashernandez">
+          <a className={styles.socialMediaItem}>
+            <div className={styles.socialMediaItem__logo}>
+              <Image src={facebookImg} alt="Facebook" />
+            </div>
+            <div className={styles.socialMediaItem__info}>
+              <p className={styles.socialMediaItem__info__title}>Facebook</p>
+              <p className={styles.socialMediaItem__info__subtitle}>
+                David Vargas
+              </p>
+            </div>
+          </a>
+        </Link>
       </div>
     </>
   );
