@@ -110,6 +110,10 @@ $headerHeight: 100px;
             border-radius: $borderRadius;
             transition: 0.3s ease all;
 
+            @media (max-width: 600px) {
+              color: #fff;
+            }
+
             &:hover {
               background: rgba($light, 0.1);
             }

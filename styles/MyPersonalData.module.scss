@@ -5,6 +5,10 @@
   &__infoContainer {
     width: 80%;
 
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+
     &__title {
       font-size: 3rem;
       margin: 0 0 30px;
@@ -15,6 +19,10 @@
       margin: 0 80px 0 0;
       font-size: 1.1rem;
       line-height: 1.75rem;
+
+      @media (max-width: 600px) {
+        width: 100%;
+      }
     }
   }
 
@@ -23,21 +31,40 @@
     height: 170px;
     border-radius: 50%;
     overflow: hidden;
+
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
 }
 
 .socialMedia {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    gap: 10px;
+  }
 }
 
 .socialMediaItem {
   display: flex;
 
+  @media (max-width: 600px) {
+    display: grid;
+  }
+
   &__logo {
     max-width: 50px;
     align-self: center;
     margin-right: 20px;
+
+    @media (max-width: 600px) {
+      width: 50px;
+      margin: 0px auto;
+    }
   }
 
   &__info {
@@ -49,12 +76,22 @@
       letter-spacing: 0.1rem;
       font-weight: 200;
       margin: 0 0 5px;
+
+      @media (max-width: 600px) {
+        text-align: center;
+        font-size: 1.2rem;
+      }
     }
 
     &__subtitle {
       font-weight: 500;
       margin: 0;
       font-size: 1.4rem;
+
+      @media (max-width: 600px) {
+        text-align: center;
+        font-size: 1.2rem;
+      }
     }
   }
 }

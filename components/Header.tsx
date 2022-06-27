@@ -37,7 +37,7 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.header__content}>
         <Link href="/" className={styles.header__content__logo}>
-          <a onClick={menuToggleHandler}>David Vargas Hernández</a>
+          <a>David Vargas Hernández</a>
         </Link>
         <nav
           className={`${styles.header__content__nav} ${
@@ -47,22 +47,42 @@ const Header = () => {
           <ul>
             <li>
               <Link href="/">
-                <a onClick={menuToggleHandler}>Inicio</a>
+                <a
+                  className={styles.header__content__nav__a}
+                  onClick={menuToggleHandler}
+                >
+                  Inicio
+                </a>
               </Link>
             </li>
             <li>
               <Link href="/post/quien-es-david-vargas-hernandez">
-                <a onClick={menuToggleHandler}>Acerca</a>
+                <a
+                  className={styles.header__content__nav__a}
+                  onClick={menuToggleHandler}
+                >
+                  Acerca
+                </a>
               </Link>
             </li>
             <li>
               <Link href="/articles">
-                <a onClick={menuToggleHandler}>Artículos</a>
+                <a
+                  className={styles.header__content__nav__a}
+                  onClick={menuToggleHandler}
+                >
+                  Artículos
+                </a>
               </Link>
             </li>
             <li>
               <Link href="/projects">
-                <a onClick={menuToggleHandler}>Proyectos</a>
+                <a
+                  className={styles.header__content__nav__a}
+                  onClick={menuToggleHandler}
+                >
+                  Proyectos
+                </a>
               </Link>
             </li>
           </ul>

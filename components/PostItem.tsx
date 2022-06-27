@@ -48,11 +48,11 @@ const Footer: React.FC<Props> = ({
         <a className={styles.postContainer__title}>{title}</a>
       </Link>
       <div>
-        {tagRender.map((tag, key) => (
-          <p key={key} className={styles.postContainer__tags}>
-            {tag}&nbsp; &nbsp;
-          </p>
-        ))}
+        <p className={styles.postContainer__tags}>
+          {tagRender.map((tag, key) => (
+            <span key={key}>{tag} &nbsp;</span>
+          ))}
+        </p>
       </div>
 
       <p className={styles.postContainer__info}>
