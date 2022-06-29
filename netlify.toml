@@ -6,4 +6,4 @@ command = "yarn next build"
 publish = ".next" 
 
 [functions]
-included_files = [".next/*.json"]
+node_bundler = "esbuild"
