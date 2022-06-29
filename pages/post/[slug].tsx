@@ -62,8 +62,6 @@ const Post: React.FC<{ post: Post }> = (props) => {
     document.body.appendChild(script);
   }
 
-  console.log(post);
-
   return (
     <div className={styles.container}>
       <h1 className={styles.titlePost}>{post.title}</h1>

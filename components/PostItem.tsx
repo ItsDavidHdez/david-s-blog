@@ -36,8 +36,6 @@ const Footer: React.FC<Props> = ({
     return tag.name;
   });
 
-  console.log(tagRender);
-
   return (
     <div className={styles.postContainer}>
       <p className={styles.postContainer__date}>
