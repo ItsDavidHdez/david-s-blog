@@ -4,3 +4,8 @@ package = "@netlify/plugin-nextjs"
 [build]
 command = "yarn next build"
 publish = ".next" 
+
+[functions]
+  # Specifies `esbuild` for functions bundling
+  node_bundler = "esbuild"
+  external_node_modules = ["next", "@ampproject/toolbox-optimizer", "sharp"]
