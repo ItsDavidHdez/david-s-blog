@@ -9,7 +9,7 @@
 
 .containerHome {
   display: grid;
-  grid-template-columns: 80% 20%;
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 15px;
   padding-top: 25px;
   border-top: 1px solid #d9d9d9;
@@ -213,13 +213,14 @@
 
   &__date {
     color: #9298a2;
-    margin: 0;
+    margin: 10px 0 0;
   }
 
   &__title {
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 2rem;
+    margin: 5px 0 0;
   }
 
   &__tags {
@@ -234,6 +235,14 @@
   &__info {
     margin: 10px 0 30px 0;
     color: #525252;
+  }
+
+  &__authorContainer {
+    display: flex;
+
+    &__name {
+      margin-left: 10px;
+    }
   }
 }
 

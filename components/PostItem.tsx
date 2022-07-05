@@ -1,30 +1,32 @@
 import Link from "next/link";
 import styles from "../styles/Home.module.scss";
 import { useDate } from "../hooks/useDate";
+import Image from "next/image";
+import { useGetMinutesForMinute } from "../hooks/useGetMinutesForMinute";
 
 interface Props {
   title: string;
   slug: string;
   date: string;
   excerpt: string;
-  tags: Tags;
-  readingTime: number;
+  coverImage: string;
+  author: Authors[];
+  content: string;
 }
 
-type Tags = Tag[];
-
-type Tag = {
-  tags: string;
+type Authors = {
   name: string;
+  picture: any;
 };
 
-const Footer: React.FC<Props> = ({
+const PostItem: React.FC<Props> = ({
   title,
   slug,
   date,
   excerpt,
-  tags,
-  readingTime,
+  coverImage,
+  author,
+  content,
 }: Props) => {
   const newDate = new Date(date);
 
@@ -32,34 +34,54 @@ const Footer: React.FC<Props> = ({
   const getMonth = newDate.getMonth() + 1;
   const getYear = newDate.getFullYear();
 
-  const tagRender = tags.map((tag) => {
-    return tag.name;
-  });
-
   return (
-    <div className={styles.postContainer}>
-      <p className={styles.postContainer__date}>
-        {useDate(getDay, getMonth, getYear)} ·{" "}
-        {readingTime === 0 ? 1 : readingTime} Min ⏳
-      </p>
-      <Link href="/post/[slug]" as={`/post/${slug}`}>
-        <a className={styles.postContainer__title}>{title}</a>
-      </Link>
-      <div>
-        <p className={styles.postContainer__tags}>
-          {tagRender.map((tag, key) => (
-            <span key={key}>{tag} &nbsp;</span>
-          ))}
+    <Link
+      href="/post/[slug]"
+      as={`/post/${slug}`}
+      className={styles.postContainer}
+    >
+      <a>
+        <div
+          style={{
+            width: "100%",
+          }}
+        >
+          <img src={coverImage} alt={title} style={{ width: "100%" }} />
+        </div>
+        <p className={styles.postContainer__date}>
+          {useDate(getDay, getMonth, getYear)} ·{" "}
+          {useGetMinutesForMinute(content)} Min ⏳
         </p>
-      </div>
-
-      <p className={styles.postContainer__info}>
-        {excerpt
-          ? excerpt
-          : "Soy medio idiota y olvidé poner un texto inicial por aquí, pero eso no le quita lo interesante al post 😅"}
-      </p>
-    </div>
+        <p className={styles.postContainer__title}>{title}</p>
+        <p className={styles.postContainer__info}>
+          {excerpt
+            ? excerpt
+            : "Soy medio idiota y olvidé poner un texto inicial por aquí, pero eso no le quita lo interesante al post 😅"}
+        </p>
+        <div className={styles.postContainer__authorContainer}>
+          <div
+            style={{
+              width: "40px",
+              height: "40px",
+              borderRadius: "50%",
+              overflow: "hidden",
+              position: "relative",
+            }}
+          >
+            <Image
+              src={author.picture}
+              alt={author.name}
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
+          <p className={styles.postContainer__authorContainer__name}>
+            {author.name}
+          </p>
+        </div>
+      </a>
+    </Link>
   );
 };
 
-export default Footer;
+export default PostItem;

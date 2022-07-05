@@ -4,38 +4,11 @@ import styles from "../../styles/Home.module.scss";
 import Loader from "../../components/Loader";
 import Button from "../../components/Button";
 import LeftContent from "../../components/LeftContent";
-import { getPost } from "../../hooks/useGetPosts";
+import { getAllPosts, getPostBySlug } from "../../lib/api";
+import markdownToHtml from "../../lib/markdownToHtml";
+import markdownStyles from "../../styles/markdown-styles.module.scss";
 
-type Post = {
-  title: string;
-  html: string;
-  slug: string;
-  tags: Tags[];
-};
-
-type Tags = {
-  tags: string;
-  name: string;
-};
-
-export const getStaticProps = async ({ params }) => {
-  const post = await getPost(params.slug);
-  return {
-    props: { post },
-    revalidate: 10,
-  };
-};
-
-export const getStaticPaths = () => {
-  return {
-    paths: [],
-    fallback: true,
-  };
-};
-
-const Post: React.FC<{ post: Post }> = (props) => {
-  const { post } = props;
-
+const Post = ({ post, morePosts, preview }) => {
   const [enableLoadComments, setEnableLoadComments] = useState<boolean>(true);
 
   const router = useRouter();
@@ -65,12 +38,13 @@ const Post: React.FC<{ post: Post }> = (props) => {
   return (
     <div className={styles.container}>
       <h1 className={styles.titlePost}>{post.title}</h1>
+
       <div className={styles.contentContainer}>
-        <LeftContent tags={post.tags} />
+        <LeftContent />
         <div>
           <div
-            className={styles.html}
-            dangerouslySetInnerHTML={{ __html: post.html }}
+            className={(styles.html, markdownStyles["markdown"])}
+            dangerouslySetInnerHTML={{ __html: post.content }}
           ></div>
         </div>
       </div>
@@ -87,5 +61,42 @@ const Post: React.FC<{ post: Post }> = (props) => {
     </div>
   );
 };
+
+export async function getStaticProps({ params }) {
+  const post = getPostBySlug(params.slug, [
+    "title",
+    "date",
+    "slug",
+    "author",
+    "content",
+    "ogImage",
+    "coverImage",
+  ]);
+  const content = await markdownToHtml(post.content || "");
+
+  return {
+    props: {
+      post: {
+        ...post,
+        content,
+      },
+    },
+  };
+}
+
+export async function getStaticPaths() {
+  const posts = getAllPosts(["slug"]);
+
+  return {
+    paths: posts.map((post) => {
+      return {
+        params: {
+          slug: post.slug,
+        },
+      };
+    }),
+    fallback: false,
+  };
+}
 
 export default Post;

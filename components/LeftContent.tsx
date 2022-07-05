@@ -5,18 +5,7 @@ import meImg from "../public/me.jpeg";
 import styles from "../styles/LeftContent.module.scss";
 import BuyMeACoffeeButton from "../components/BuyMeACoffeeButton";
 
-interface Props {
-  tags: Tags;
-}
-
-type Tags = Tag[];
-
-type Tag = {
-  tags: string;
-  name: string;
-};
-
-const LeftContent: React.FC<Props> = ({ tags }) => {
+const LeftContent = () => {
   return (
     <div>
       <div className={styles.myData}>
