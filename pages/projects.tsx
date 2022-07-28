@@ -1,10 +1,10 @@
 const Projects = () => {
   return (
-    <>
-      <h1 style={{ textAlign: "center", height: "65vh" }}>
+    <div>
+      <h1 style={{ textAlign: "center", height: "65vh", margin: 0 }}>
         The projects module will be enable soon! :)
       </h1>
-    </>
+    </div>
   );
 };
 
