@@ -10,13 +10,13 @@ interface Props {
   date: string;
   excerpt: string;
   coverImage: string;
-  author: Authors[];
+  author: Authors;
   content: string;
 }
 
 type Authors = {
+  picture: string;
   name: string;
-  picture: any;
 };
 
 const PostItem: React.FC<Props> = ({

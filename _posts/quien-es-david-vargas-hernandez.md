@@ -47,15 +47,19 @@ A finales del 2021 llegó a Telcel con un equipo enorme por detrás, desarrollan
 
 Tiene instagram y lo deberías de seguir como [**@itsdavidhdez**](https://www.instagram.com/itsdavidhdez/)
 
-**David ha estudiado en:**
+### David ha estudiado en:
+
 [Instituto Tecnológico de Cerro Azul](https://cerroazul.tecnm.mx//)
 
-**David vive actualmente en:**
+### David vive actualmente en:
+
 [Tuxpan de Rodriguez Cano, Veracruz, México.](https://www.google.com/maps?q=tuxpan+de+rodr%C3%ADguez+cano&rlz=1C5CHFA_enMX987MX987&um=1&ie=UTF-8&sa=X&ved=2ahUKEwimxtmE78b4AhXHDEQIHdfNDCoQ_AUoAXoECAIQAw)
 
-Cuando David no es desarrolladorEstá con sus amigos, jugar videojuegos, le gusta manejar coches, está con su novia, toma cerveza, lee cómics de Marvel, prueba plugins, corre, salta la cuerda, hackea cosas, va al cine, come rollitos, sale con su familia, escucha música, explora Puebla, pero sobre todo: aprende siempre de todos los que le rodean.
+### Cuando David no es desarrollador
 
-**Redes sociales de David**
+Está con sus amigos, juega videojuegos, le gusta manejar coches, está con su [novia](https://www.instagram.com/maffortega17/), toma cerveza, lee cómics de Marvel, prueba plugins, corre, salta la cuerda, hackea cosas, va al cine, come rollitos, sale con su familia, escucha música, explora Puebla, pero sobre todo: aprende siempre de todos los que le rodean.
+
+### Redes sociales de David
 
 - [Twitter](https://twitter.com/ItsDavidHdez)
 - [Instagram](https://www.instagram.com/itsdavidhdez/)

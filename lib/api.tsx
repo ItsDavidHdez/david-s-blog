@@ -2,10 +2,18 @@ import fs from "fs";
 import { join } from "path";
 import matter from "gray-matter";
 
+interface Post {
+  date: string;
+}
+
 const postsDirectory = join(process.cwd(), "_posts");
 
 export function getPostSlugs() {
   return fs.readdirSync(postsDirectory);
+}
+
+interface Posts {
+  content: string;
 }
 
 export function getPostBySlug(slug, fields = []) {
@@ -35,9 +43,10 @@ export function getPostBySlug(slug, fields = []) {
 
 export function getAllPosts(fields = []) {
   const slugs = getPostSlugs();
-  const posts = slugs
-    .map((slug) => getPostBySlug(slug, fields))
-    // sort posts by date in descending order
-    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
-  return posts;
+  return (
+    slugs
+      .map((slug) => getPostBySlug(slug, fields))
+      // sort posts by date in descending order
+      .sort((post1: Post, post2: Post) => (post1.date > post2.date ? -1 : 1))
+  );
 }

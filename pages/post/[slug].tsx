@@ -8,7 +8,7 @@ import { getAllPosts, getPostBySlug } from "../../lib/api";
 import markdownToHtml from "../../lib/markdownToHtml";
 import markdownStyles from "../../styles/markdown-styles.module.scss";
 
-const Post = ({ post, morePosts, preview }) => {
+const Post = ({ post }) => {
   const [enableLoadComments, setEnableLoadComments] = useState<boolean>(true);
 
   const router = useRouter();
@@ -34,7 +34,6 @@ const Post = ({ post, morePosts, preview }) => {
 
     document.body.appendChild(script);
   }
-
   return (
     <div className={styles.container}>
       <h1 className={styles.titlePost}>{post.title}</h1>
@@ -62,8 +61,23 @@ const Post = ({ post, morePosts, preview }) => {
   );
 };
 
+interface PostPaths {
+  slug: string;
+}
+
+interface PostMarkDown {
+  getPostBySlug: string;
+  title: string;
+  date: string;
+  slug: string;
+  author: string;
+  content: string;
+  ogImage: string;
+  coverImage: string;
+}
+
 export async function getStaticProps({ params }) {
-  const post = getPostBySlug(params.slug, [
+  const post: any = getPostBySlug(params.slug, [
     "title",
     "date",
     "slug",
@@ -72,6 +86,7 @@ export async function getStaticProps({ params }) {
     "ogImage",
     "coverImage",
   ]);
+
   const content = await markdownToHtml(post.content || "");
 
   return {
@@ -88,7 +103,7 @@ export async function getStaticPaths() {
   const posts = getAllPosts(["slug"]);
 
   return {
-    paths: posts.map((post) => {
+    paths: posts.map((post: PostPaths) => {
       return {
         params: {
           slug: post.slug,
