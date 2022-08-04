@@ -1,7 +1,7 @@
 ---
 title: "Quien es David Vargas Hernández"
 excerpt: "David Vargas Hernández nació el 6 de Octubre de 1999. Vive de Internet. Al día de hoy vive en Tuxpan, Veracruz, México."
-coverImage: "/app-integrations.png"
+coverImage: "/david-coverimg.jpeg"
 date: "2022-07-02T19:42:00.322Z"
 author:
   name: David Vargas Hernández
@@ -10,40 +10,42 @@ ogImage:
   url: "/assets/blog/hello-world/cover.jpg"
 ---
 
-David Vargas Hernández nació el 6 de Octubre de 1999. Vive de Internet. Al día de hoy vive en Tuxpan, Veracruz, México...
+David Vargas Hernández nació el 6 de Octubre de 1999. Vive de Internet. Al día de hoy vive en Tuxpan, Veracruz, México.
 
 Desde niño le interesó mucho la tecnología, empezando con los videojuegos modernos de esa época como la pistola de Nintendo con la que matabas patitos en el legendario juego de Duck Hunt, hasta las computadoras con los monitores de forma de cubo y una computadora con 2 GB de RAM para poder conectarse a Internet.
 
-David no conocía el maravilloso mundo de la programación hasta sus 18 años, al entrar a la universidad en la carrera de Ingeniería en Sistemas Computacionales, así es, entró a dicha carrera sin saber ni un poquito de programación. Se queda con el recuerdo del primer día que la profesora le preguntó sobre sus conocimientos en programación y el solo sabía pescar con un cordel porque se lo enseñó un amigo en la preparatoria, mientras la mayoría mencionaba HTML, C++, PHP, desarrollo de aplicaciones móviles y el temeroso Java.
+![David en el 2014](/david-2014.jpeg)
 
-Java fue el primer lenguaje en el que descubrió la programación. En el fondo siente un odio hacía ese lenguaje pero a la vez un cariño, por ser su primera experiencia en este mundo.
+David no conocía el maravilloso mundo de la programación hasta sus 18 años, al entrar a la universidad en la carrera de Ingeniería en Sistemas Computacionales. Se queda con el recuerdo del primer día que la profesora le preguntó sobre sus conocimientos en programación y el solo sabía pescar con un cordel porque se lo enseñó un amigo en la preparatoria, mientras la mayoría mencionaba HTML, C++, PHP, desarrollo de aplicaciones móviles y Java.
+
+Java fue el primer lenguaje en el que descubrió la programación.
 
 Al inicio de su carrera fue muy complicado en el tema económico, pero tenía confianza que al invertir en educación enfocado al desarrollo de software cambiaría su vida para siempre.
 
-En octubre del 2019 fue invitado a un concurso de programación (Java, C++ o Python) organizado por el Tecnológico Nacional de México donde participaban 341 equipos del cual su equipo quedó en el lugar 121, no es el mejor lugar pero se quedaron con el aprendizaje obtenido en dicho evento, no cabe duda que los nervios te comen vivo.
+En octubre del 2019 fue invitado a un concurso de programación (Java, C++ o Python) organizado por el Tecnológico Nacional de México donde participaban 341 equipos del cual su equipo quedó en el lugar 121.
 
-Después de ese concurso lo motivó más a crecer profesionalmente, a conocer más del mundo del desarrollo de software, y no fue por navidades del 2019 que le pidió a su papá una suscripción anual en Platzi para poder formarse profesionalmente, su papá con mucho esfuerzo accedió, fue la mejor decisión de toda su vida.
+![David en el concurso](/david-itca.png)
 
-Todo fluyó de maravilla, siguió aprendiendo muchísimo sobre desarrollo web en Platzi, llegó el 2020 y... llegó la pandemia.
+Después de ese concurso lo motivó más a crecer profesionalmente, a conocer más del mundo del desarrollo de software, y no fue a finales del 2019 que se dedicó profesionalmente al desarrollo web capacitado por Platzi, fue la mejor decisión de toda su vida.
 
-El 2020 fue un año difícil para todos, perdimos a muchos familiares, amigos y más gente que llevamos en nuestros corazones, aparte de que aplicó una revolución total en nuestra vida cotidiana, las clases virtuales, videollamadas, trabajo remoto... Era perfecto para estudiar sin interrupciones, lo aprovechó, el 2020 fue el mejor año de toda su vida hasta la fecha.
-
-El sabía que al estudiar en línea era algo que se le facilitaba pero no lo sabía hasta apenas ese año, todo fluía muy bien, pero sabía que necesitaría a un mentor, un desarrollador de software con años de experiencia en la industria. Christian, su hermano, un sr desarrollador de software, le enseñó lo requerido en un lapso de 4 meses para poder llevar su carrera a otro nivel.
+El 2020 fue un año difícil para todos, llegó la pandemia y con ello las clases virtuales, videollamadas, trabajo remoto... Era perfecto para estudiar sin interrupciones, lo aprovechó, el 2020 fue el mejor año de toda su vida hasta la fecha.
 
 _En el peor año del brote del SARS-CoV-2, se fue a la Ciudad de México para impulsar su carrera, con la más grande motivación de toda su vida_
 
-Logró dominar Javascript y meterse de lleno al mundo de la programación gracias a que empezó a trabajar en Gomma.
+No tardó ni un año, consiguió su primer empleo en la industria en [**Gomma**](https://www.facebook.com/ProyectoGomma/) trabajando con React.js y Node.js para el proyecto llamado [**Cuoty**](https://cuoty.com/) desde 0: creación de los wireframes hasta producción.
 
-_Gomma fue su primer empleo en la industria. Le tiene demasiado cariño._
+![David trabajando](/david-working2.jpeg)
 
-Continuó trabajando como backend developer en STM por un breve tiempo, dandolé mantenimiento a su base de datos y desarrollando los nuevos requerimientos a su ERP.
+Continuó trabajando como backend developer en [**STM**](https://stmseguridad.com/) por un breve tiempo, dandolé mantenimiento a su base de datos con MySQL y desarrollando los nuevos requerimientos a su ERP.
 
-Después migró a [ETC Iberoamerica](https://etciberoamerica.com/) donde desarrolló un rediseño de una plataforma de educación en línea muy famoso en Estados Unidos y Canada, llamada [Jasperactive](https://jasperactive.com/) con React y Typescript.
+Después migró a [**ETC Iberoamerica**](https://etciberoamerica.com/) donde desarrolló un rediseño de una plataforma de educación en línea muy famoso en Estados Unidos y Canada, llamada [**Jasperactive**](https://jasperactive.com/) con React y Typescript.
 
-En noviembre del 2021 llegó a trabajar en [Multiplica](https://www.multiplica.com/en/), donde desarrolló interfaces de usuario en [Inter Seguros](https://inter.mx/) con React y Typescript terminando el incremento del todo el front.
+En noviembre del 2021 llegó a trabajar en [**Multiplica**](https://www.multiplica.com/en/), donde desarrolló interfaces de usuario en [**Inter Seguros**](https://inter.mx/) con React y Typescript terminando el incremento del todo el front.
 
 Al terminó del incremento de Inter lo migraron a otro proyecto con un cliente con algo de reconocimiento, Telcel.
-A finales del 2021 llegó a Telcel con un equipo enorme por detrás, desarrollando interfaces de usuario para el portal de Mi Telcel, telcel.com, Telcel Tienda y Telcel Empresas.
+A finales del 2021 llegó a Telcel con un equipo enorme por detrás, desarrollando interfaces de usuario para el portal de [**Mi Telcel**](https://www.mitelcel.com/mitelcel/login), [**Telcel.com**](https://www.telcel.com/), [**Telcel Tienda**](https://www.telcel.com/personas/equipos/telefonos-y-smartphones) y [**Telcel Empresas**](https://www.telcel.com/empresas).
+
+![David Team](/david-team.jpeg)
 
 Tiene instagram y lo deberías de seguir como [**@itsdavidhdez**](https://www.instagram.com/itsdavidhdez/)
 

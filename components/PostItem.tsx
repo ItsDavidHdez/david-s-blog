@@ -46,7 +46,13 @@ const PostItem: React.FC<Props> = ({
             width: "100%",
           }}
         >
-          <img src={coverImage} alt={title} style={{ width: "100%" }} />
+          <Image
+            src={coverImage}
+            alt={title}
+            width="1000"
+            height="600px"
+            objectFit="cover"
+          />
         </div>
         <p className={styles.postContainer__date}>
           {useDate(getDay, getMonth, getYear)} ·{" "}
