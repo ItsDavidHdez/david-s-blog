@@ -37,10 +37,9 @@ const Post = ({ post }) => {
   return (
     <div className={styles.container}>
       <h1 className={styles.titlePost}>{post.title}</h1>
-
       <div className={styles.contentContainer}>
         <LeftContent />
-        <div>
+        <div className={styles.htmlContent}>
           <div
             className={(styles.html, markdownStyles["markdown"])}
             dangerouslySetInnerHTML={{ __html: post.content }}
@@ -63,17 +62,6 @@ const Post = ({ post }) => {
 
 interface PostPaths {
   slug: string;
-}
-
-interface PostMarkDown {
-  getPostBySlug: string;
-  title: string;
-  date: string;
-  slug: string;
-  author: string;
-  content: string;
-  ogImage: string;
-  coverImage: string;
 }
 
 export async function getStaticProps({ params }) {
