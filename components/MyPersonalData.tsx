@@ -21,7 +21,13 @@ const MyPersonalData: React.FC = () => {
           </p>
         </div>
         <div className={styles.dataContainer__imgContainer}>
-          <Image src={myImg} alt="David Vargas Hernández" />
+          <Image
+            src={myImg}
+            alt="David Vargas Hernández"
+            width="170"
+            height="170"
+            objectFit="cover"
+          />
         </div>
       </div>
       <div className={styles.socialMedia}>
