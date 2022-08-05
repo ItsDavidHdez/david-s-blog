@@ -21,20 +21,14 @@ const MyPersonalData: React.FC = () => {
           </p>
         </div>
         <div className={styles.dataContainer__imgContainer}>
-          <Image
-            src={myImg}
-            alt="David Vargas Hernández"
-            width="170"
-            height="170"
-            objectFit="cover"
-          />
+          <Image src={myImg} alt="David Vargas Hernández" />
         </div>
       </div>
       <div className={styles.socialMedia}>
         <Link href="https://twitter.com/ItsDavidHdez">
           <a className={styles.socialMediaItem}>
             <div className={styles.socialMediaItem__logo}>
-              <Image src={twitterImg} alt="Twitter" width="50" height="50" />
+              <Image src={twitterImg} alt="Twitter" />
             </div>
             <div className={styles.socialMediaInfo}>
               <p className={styles.socialMediaItem__info__title}>Twitter</p>
@@ -47,7 +41,7 @@ const MyPersonalData: React.FC = () => {
         <Link href="https://www.linkedin.com/in/david-vargas-hern%C3%A1ndez-677183189/">
           <a className={styles.socialMediaItem}>
             <div className={styles.socialMediaItem__logo}>
-              <Image src={linkedingImg} alt="Linkedin" width="50" height="50" />
+              <Image src={linkedingImg} alt="Linkedin" />
             </div>
             <div className={styles.socialMediaInfo}>
               <p className={styles.socialMediaItem__info__title}>Linkedin</p>
@@ -60,12 +54,7 @@ const MyPersonalData: React.FC = () => {
         <Link href="https://www.instagram.com/itsdavidhdez/">
           <a className={styles.socialMediaItem}>
             <div className={styles.socialMediaItem__logo}>
-              <Image
-                src={instagramImg}
-                alt="Instagram"
-                width="50"
-                height="50"
-              />
+              <Image src={instagramImg} alt="Instagram" />
             </div>
             <div className={styles.socialMediaItem__info}>
               <p className={styles.socialMediaItem__info__title}>Instagram</p>
@@ -78,7 +67,7 @@ const MyPersonalData: React.FC = () => {
         <Link href="https://www.facebook.com/angeldavid.vargashernandez">
           <a className={styles.socialMediaItem}>
             <div className={styles.socialMediaItem__logo}>
-              <Image src={facebookImg} alt="Facebook" width="50" height="50" />
+              <Image src={facebookImg} alt="Facebook" />
             </div>
             <div className={styles.socialMediaItem__info}>
               <p className={styles.socialMediaItem__info__title}>Facebook</p>

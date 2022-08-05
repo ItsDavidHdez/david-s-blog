@@ -5,6 +5,10 @@ const nextConfig = {
     domains: ["static.ghost.org", "localhost"],
     unoptimized: true,
   },
+  i18n: {
+    locales: ["es"],
+    defaultLocale: "es",
+  },
 };
 
 module.exports = nextConfig;
