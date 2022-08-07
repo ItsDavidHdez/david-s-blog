@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Script
         strategy="lazyOnload"
-        src="https://www.googletagmanager.com/gtag/js?id=G-JFFKMG104P"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALITYCS}`}
       />
       {/* eslint-disable-next-line @next/next/inline-script-id */}
       <Script strategy="lazyOnload">
@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-JFFKMG104P');
+      gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALITYCS}');
     `}
       </Script>
       <Layout>
