@@ -1,6 +1,6 @@
 ---
 title: "¿Cómo obtener más fuentes de ingreso en 2022?"
-excerpt: "Porque depender solo de una puede llevarte a la bancarrota rápidamente te enseño como generar 7 fuentes de ingreso distintas en 2022."
+excerpt: "Porque depender sólo de una puede llevarte a la bancarrota rápidamente te enseñaré como generar 7 fuentes de ingreso distintas en 2022."
 coverImage: "/banner-fuentes-ingresos.png"
 date: "2022-08-13T23:10:00.322Z"
 author:
@@ -10,11 +10,11 @@ ogImage:
   url: "/assets/blog/hello-world/cover.jpg"
 ---
 
-Si algo se aprende de una carrera profesional es que ningún trabajo es seguro ni nada es para siempre. La economía sube y baja. Es mercado está en una burbuja especulativa donde nunca se sabe lo que puede pasar y eso nunca es bueno cuando tu única fuente de ingresos es un trabajo nominal o mixto.
+Si algo se aprende de una carrera profesional es que ningún trabajo es seguro ni nada es para siempre. La economía sube y baja. El mercado está en una burbuja especulativa donde nunca se sabe lo que puede pasar y eso nunca es bueno cuando tu única fuente de ingresos es un trabajo nominal o mixto.
 
 Por ello, cada vez somos más los que se ponen a buscar o crear múltiples fuentes de ingreso, ya sea invirtiendo, arrancando un negocio o consiguiendo un segundo trabajo.
 
-Tener varias fuentes de ingreso te dará mayor seguridad económica, porque depender de solo uno te puede llevar a la bancarrota rápidamente; y si, algunas actividades pueden llegar a ser muy abrumadores por el exceso de trabajo que se llevaría, por eso te enseñaré en este post 7 distintas opciones de fuentes de ingreso en 2022.
+Tener varias fuentes de ingreso te dará mayor seguridad económica, porque depender de sólo uno te puede llevar a la bancarrota rápidamente; y si, algunas actividades pueden llegar a ser muy abrumador por el exceso de trabajo que se llevaría, por eso te enseñaré en este post 7 distintas opciones de fuentes de ingreso en 2022.
 
 ### Google Adsense
 
