@@ -1,7 +1,6 @@
 import MyPersonalData from "../components/MyPersonalData";
 import PostItem from "../components/PostItem";
 import styles from "../styles/Home.module.scss";
-import Newsletter from "../components/Newsletter";
 import { getAllPosts } from "../lib/api";
 
 const Home = ({ allPosts }) => {
