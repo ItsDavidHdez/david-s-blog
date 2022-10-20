@@ -16,8 +16,8 @@ const MyPersonalData: React.FC = () => {
             David Vargas Hernández
           </h1>
           <p className={styles.dataContainer__infoContainer__subtitle}>
-            React Developer - Node Developer - Software Engineer - #ReactDev
-            #BTC #NodeDev 🇲🇽
+            React Developer - Node Developer - Golang Developer - Software
+            Engineer 🇲🇽
           </p>
         </div>
         <div className={styles.dataContainer__imgContainer}>
