@@ -1,6 +1,6 @@
 ---
 title: "¿Qué es Docker y contenedores?"
-excerpt: "Hablemos de las ventajas que nos trae Docker, un poco de las VM's y porque dejar de usarlas (por favor, deja de usarlas)."
+excerpt: "Docker se ha vuelto muy popular desde su lanzamiento, siendo una de las plataformas más usadas después de Linux y Windows según los resultados del Developer Survey 2019 de StackOverflow"
 coverImage: "/docker.jpeg"
 date: "2022-10-20T16:05:00.322Z"
 author:
