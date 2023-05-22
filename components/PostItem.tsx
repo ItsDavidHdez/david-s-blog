@@ -67,29 +67,33 @@ const PostItem: React.FC<Props> = ({
             ? excerpt
             : "Soy medio idiota y olvidé poner un texto inicial por aquí, pero eso no le quita lo interesante al post 😅"}
         </p>
-        <div>
-          <Tag title={tag} />
-        </div>
+
         <div className={styles.postContainer__authorContainer}>
-          <div
-            style={{
-              width: "40px",
-              height: "40px",
-              borderRadius: "50%",
-              overflow: "hidden",
-              position: "relative",
-            }}
-          >
-            <Image
-              src={author.picture}
-              alt={author.name}
-              layout="fill"
-              objectFit="contain"
-            />
+          <div>
+            <Tag title={tag} />
           </div>
-          <p className={styles.postContainer__authorContainer__name}>
-            {author.name}
-          </p>
+          <div className={styles.postContainer__principalAuthorContainer}>
+            <div
+              style={{
+                width: "40px",
+                height: "40px",
+                borderRadius: "50%",
+                overflow: "hidden",
+                position: "relative",
+                top: 5,
+              }}
+            >
+              <Image
+                src={author.picture}
+                alt={author.name}
+                layout="fill"
+                // objectFit="contain"
+              />
+            </div>
+            <p className={styles.postContainer__authorContainer__name}>
+              {author.name}
+            </p>
+          </div>
         </div>
       </a>
     </Link>
