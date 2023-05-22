@@ -3,6 +3,7 @@ title: "¿Qué es Kubernetes?"
 excerpt: "Nada es perfecto y Docker no es la excepción, ¿qué pasaría si tenemos decenas de cientos de contenedores Docker corriendo en nuestro ecosistema? Aquí es donde entra Kubernetes."
 coverImage: "/kubernetes.png"
 date: "2022-10-20T17:30:00.322Z"
+tag: DevOps
 author:
   name: David Vargas Hernández
   picture: "/me.jpeg"

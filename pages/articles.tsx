@@ -25,6 +25,8 @@ const Articles = ({ allPosts }) => {
     setDataSearch(resultSearch);
   };
 
+  console.log("tag", dataSearch);
+
   return (
     <div className={styles.container}>
       <InputSearch handleChange={handleChange} />
@@ -41,6 +43,7 @@ const Articles = ({ allPosts }) => {
               slug={post.slug}
               excerpt={post.excerpt}
               content={post.content}
+              tag={post.tag}
             />
           ))}
         </div>

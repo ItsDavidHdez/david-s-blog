@@ -3,6 +3,7 @@ title: "¿Cómo obtener más fuentes de ingreso en 2022?"
 excerpt: "Porque depender sólo de una puede llevarte a la bancarrota rápidamente te enseñaré como generar 7 fuentes de ingreso distintas en 2022."
 coverImage: "/banner-fuentes-ingresos.png"
 date: "2022-08-13T23:10:00.322Z"
+tag: Finanzas
 author:
   name: David Vargas Hernández
   picture: "/me.jpeg"

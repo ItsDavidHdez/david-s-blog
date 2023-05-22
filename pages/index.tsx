@@ -20,6 +20,7 @@ const Home = ({ allPosts }) => {
             slug={post.slug}
             excerpt={post.excerpt}
             content={post.content}
+            tag={post.tag}
           />
         ))}
       </div>
@@ -36,6 +37,7 @@ export async function getStaticProps() {
     "coverImage",
     "excerpt",
     "content",
+    "tag",
   ]);
 
   return {

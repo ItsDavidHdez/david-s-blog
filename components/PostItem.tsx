@@ -3,6 +3,7 @@ import styles from "../styles/Home.module.scss";
 import { useDate } from "../hooks/useDate";
 import Image from "next/image";
 import { useGetMinutesForMinute } from "../hooks/useGetMinutesForMinute";
+import Tag from "../components/Tag";
 
 interface Props {
   title: string;
@@ -12,6 +13,7 @@ interface Props {
   coverImage: string;
   author: Authors;
   content: string;
+  tag: string;
 }
 
 type Authors = {
@@ -27,6 +29,7 @@ const PostItem: React.FC<Props> = ({
   coverImage,
   author,
   content,
+  tag,
 }: Props) => {
   const newDate = new Date(date);
 
@@ -64,6 +67,9 @@ const PostItem: React.FC<Props> = ({
             ? excerpt
             : "Soy medio idiota y olvidé poner un texto inicial por aquí, pero eso no le quita lo interesante al post 😅"}
         </p>
+        <div>
+          <Tag title={tag} />
+        </div>
         <div className={styles.postContainer__authorContainer}>
           <div
             style={{

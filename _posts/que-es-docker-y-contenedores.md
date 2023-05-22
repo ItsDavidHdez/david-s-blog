@@ -3,6 +3,7 @@ title: "¿Qué es Docker y contenedores?"
 excerpt: "Docker se ha vuelto muy popular desde su lanzamiento, siendo una de las plataformas más usadas después de Linux y Windows según los resultados del Developer Survey 2019 de StackOverflow"
 coverImage: "/docker.jpeg"
 date: "2022-10-20T16:05:00.322Z"
+tag: DevOps
 author:
   name: David Vargas Hernández
   picture: "/me.jpeg"

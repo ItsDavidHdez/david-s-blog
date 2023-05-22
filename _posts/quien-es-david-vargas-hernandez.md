@@ -3,6 +3,7 @@ title: "Quien es David Vargas Hernández"
 excerpt: "David Vargas Hernández nació el 6 de Octubre de 1999. Vive de Internet. Al día de hoy vive en Tuxpan, Veracruz, México."
 coverImage: "/david-coverimg.jpeg"
 date: "2022-07-02T19:42:00.322Z"
+tag: Desarrollo
 author:
   name: David Vargas Hernández
   picture: "/me.jpeg"

@@ -12,10 +12,6 @@ export function getPostSlugs() {
   return fs.readdirSync(postsDirectory);
 }
 
-interface Posts {
-  content: string;
-}
-
 export function getPostBySlug(slug, fields = []) {
   const realSlug = slug.replace(/\.md$/, "");
   const fullPath = join(postsDirectory, `${realSlug}.md`);
