@@ -4,6 +4,7 @@ import { useDate } from "../hooks/useDate";
 import Image from "next/image";
 import { useGetMinutesForMinute } from "../hooks/useGetMinutesForMinute";
 import Tag from "../components/Tag";
+import { getDaysMonthsYears } from "../utils/date";
 
 interface Props {
   title: string;
@@ -31,11 +32,7 @@ const PostItem: React.FC<Props> = ({
   content,
   tag,
 }: Props) => {
-  const newDate = new Date(date);
-
-  const getDay = newDate.getDate();
-  const getMonth = newDate.getMonth() + 1;
-  const getYear = newDate.getFullYear();
+  const { getDay, getMonth, getYear } = getDaysMonthsYears(date);
 
   return (
     <Link
